@@ -844,7 +844,7 @@ textarea.sn-input{ resize: vertical; min-height: 140px; }
   font-size: 0.76rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--silver-3);
+  color: var(--blue-bright);
   margin-bottom: 18px;
 }
 .sn-chip-row{ display: flex; flex-wrap: wrap; gap: 10px; }
