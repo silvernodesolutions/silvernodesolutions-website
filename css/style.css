@@ -264,33 +264,18 @@ a{ text-decoration: none; color: inherit; }
 .sn-hero-ring-1{ inset: 0; animation: sn-spin 34s linear infinite; }
 .sn-hero-ring-2{ inset: 34px; border-style: dashed; border-color: var(--steel-line); animation: sn-spin-rev 46s linear infinite; }
 
-.sn-hex-mark{
+.sn-node-hub{
   position: relative;
-  width: 168px;
-  height: 194px;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: var(--onyx);
-  box-shadow: 0 0 60px -12px rgba(47,111,237,0.35);
-  overflow: hidden;
+  z-index: 2;
+  width: 180px;
+  height: 180px;
+  filter: drop-shadow(0 0 24px rgba(47,111,237,0.28));
+  animation: sn-hub-breathe 5.5s ease-in-out infinite;
 }
-.sn-hex-slice{
-  position: absolute;
-  inset: 0;
-}
-.sn-hex-slice-1{
-  background: repeating-linear-gradient(115deg, var(--silver-1) 0 3px, transparent 3px 9px);
-  clip-path: polygon(50% 0%, 100% 25%, 50% 50%, 0% 25%);
-  opacity: 0.9;
-}
-.sn-hex-slice-2{
-  background: repeating-linear-gradient(65deg, var(--silver-3) 0 3px, transparent 3px 9px);
-  clip-path: polygon(100% 25%, 100% 75%, 50% 100%, 50% 50%);
-  opacity: 0.85;
-}
-.sn-hex-slice-3{
-  background: repeating-linear-gradient(180deg, var(--silver-4) 0 3px, transparent 3px 9px);
-  clip-path: polygon(0% 25%, 50% 50%, 50% 100%, 0% 75%);
-  opacity: 0.8;
+
+@keyframes sn-hub-breathe{
+  0%, 100%{ transform: scale(1); }
+  50%{ transform: scale(1.03); }
 }
 
 .sn-orbit-node{
