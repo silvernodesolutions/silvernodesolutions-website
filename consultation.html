@@ -15,6 +15,24 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
+  
+<style>
+.sn-solutions-tabs .sn-tab-btn {
+  cursor: default;
+}
+
+.sn-solutions-tabs .sn-tab-btn:hover {
+  background: linear-gradient(135deg, var(--blue), #1e56c9);
+  border-color: var(--blue-bright);
+  color: var(--silver-1);
+  box-shadow: 0 10px 24px -12px rgba(47,111,237,0.55);
+}
+
+.sn-solutions-tabs .sn-tab-btn:hover i {
+  color: var(--silver-1);
+}
+</style>
+
 <link rel="icon" type="image/jpeg" href="/assets/favicon.png">
 </head>
 <body>
@@ -68,29 +86,32 @@
 <section class="sn-section sn-solutions-tabs">
   <div class="container">
 
-    <!-- Tab nav -->
-    <ul class="nav sn-tab-nav" id="solutionsTab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button class="sn-tab-btn" id="tab-digital-btn" data-bs-toggle="tab" data-bs-target="#tab-digital" type="button" role="tab"  aria-selected="false">
-          <i class="fa-solid fa-robot"></i> Business Process Review
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="sn-tab-btn" id="tab-digital-btn" data-bs-toggle="tab" data-bs-target="#tab-digital" type="button" role="tab"  aria-selected="false">
-          <i class="fa-solid fa-globe"></i> AI Opportunity Assesment
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="sn-tab-btn" id="tab-whatsapp-btn" data-bs-toggle="tab" data-bs-target="#tab-whatsapp" type="button" role="tab" aria-selected="false">
-          <i class="fa-brands fa-whatsapp"></i> Automation Recommendations
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="sn-tab-btn" id="tab-automation-btn" data-bs-toggle="tab" data-bs-target="#tab-automation" type="button" role="tab" aria-selected="false">
-          <i class="fa-solid fa-gears"></i> Personalized Roadmap
-        </button>
-      </li>
-    </ul>
+    <!-- Tab nav -->      
+<ul class="nav sn-tab-nav">
+  <li class="nav-item" role="presentation">
+    <span class="sn-tab-btn">
+      <i class="fa-solid fa-robot"></i> Business Process Review
+    </span>
+  </li>
+
+  <li class="nav-item" role="presentation">
+    <span class="sn-tab-btn">
+      <i class="fa-solid fa-globe"></i> AI Opportunity Assessment
+    </span>
+  </li>
+
+  <li class="nav-item" role="presentation">
+    <span class="sn-tab-btn">
+      <i class="fa-brands fa-whatsapp"></i> Automation Recommendations
+    </span>
+  </li>
+
+  <li class="nav-item" role="presentation">
+    <span class="sn-tab-btn">
+      <i class="fa-solid fa-gears"></i> Personalized Roadmap
+    </span>
+  </li>
+</ul>
 
     <!-- Tab panels -->
     <div class="tab-content sn-tab-content" id="solutionsTabContent">
