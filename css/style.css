@@ -537,13 +537,6 @@ a{ text-decoration: none; color: inherit; }
 
 @media (max-width: 575.98px){
   .sn-h1{ font-size: 2.5rem; }
-  .sn-h1-line2{
-    background: none;
-    -webkit-background-clip: border-box;
-    background-clip: border-box;
-    -webkit-text-fill-color: var(--silver-1);
-    color: var(--silver-1);
-  }
   .sn-cta-inner{ text-align: left; }
   .sn-cta-inner .btn{ width: 100%; }
   .sn-footer-bottom{ flex-direction: column; align-items: flex-start; }
