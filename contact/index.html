@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Silvernode Solutions</title>
+<meta name="description" content="Get in touch with Silvernode Solutions. Tell us where the friction is and we'll map out how AI, automation, and cloud can help." />
+
+<!-- Bootstrap 5 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<style>.sn-hero-inner{padding-bottom: 0px !important;}</style>
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<nav class="sn-nav navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand sn-brand" href="index.html">
+      <img src="assets/logo.jpg" alt="Silvernode Solutions" class="sn-brand-mark">
+      <span class="sn-brand-text">
+        <span class="sn-brand-silver">SILVER<span class="sn-brand-grey">NODE</span></span>
+        <span class="sn-brand-sub">SOLUTIONS</span>
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#snNavbar" aria-label="Toggle navigation">
+      <span class="sn-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="snNavbar">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="solutions.html">Solutions</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-3">
+          <a class="btn sn-btn-primary" href="consultation.html">Book a Consultation</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= PAGE HERO ================= -->
+<header class="sn-hero sn-hero-inner">
+  <canvas id="snNodeCanvas" class="sn-node-canvas" aria-hidden="true"></canvas>
+  <div class="sn-hero-fade"></div>
+
+  <div class="container position-relative">
+    <div class="row">
+      <div class="col-lg-8">
+        <p class="sn-eyebrow"><span class="sn-eyebrow-dot"></span>CONTACT US</p>
+        <h1 class="sn-h1 sn-h1-inner">
+          <span class="sn-h1-line1">Let's streamline</span>
+          <span class="sn-h1-line2">what's slowing you down</span>
+        </h1>
+        <p class="sn-lede">Tell us where the friction is — repetitive tasks, slow support, scattered systems — and we'll come back with how AI, automation, and cloud can help.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= CONTACT ================= -->
+<section class="sn-section sn-contact">
+  <div class="container">
+    <div class="row g-4 g-xl-5">
+
+      <!-- Form -->
+      <div class="col-lg-7">
+        <div class="sn-form-card">
+          <h2 class="sn-h2 mb-2">Send us a message</h2>
+          <p class="sn-form-intro">Fill in the form below and we'll get back to you as soon as we can.</p>
+
+          <form id="snContactForm" action="https://formspree.io/f/myezapbr" method="POST" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="snName" class="sn-label">Your name</label>
+                <input type="text" class="form-control sn-input" id="snName" name="name" placeholder="Jane Smith" autocomplete="name" required>
+              </div>
+              <div class="col-md-6">
+                <label for="snEmail" class="sn-label">Your email</label>
+                <input type="email" class="form-control sn-input" id="snEmail" name="email" placeholder="you@company.com" autocomplete="email" required>
+              </div>
+              <div class="col-12">
+                <label for="snInterest" class="sn-label">I'm interested in</label>
+                <select class="form-select sn-input" id="snInterest" name="interest">
+                  <option value="Not sure yet" selected>Not sure yet</option>
+                  <option value="AI Solutions">AI Solutions</option>
+                  <option value="Digital Solutions">Digital Solutions</option>
+                  <option value="WhatsApp Solutions">WhatsApp Solutions</option>
+                  <option value="Business Automation">Business Automation</option>
+                  <option value="Cloud Solutions">Cloud Solutions</option>
+                  <option value="Something Else">Something Else</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="snMessage" class="sn-label">Your message</label>
+                <textarea class="form-control sn-input" id="snMessage" name="message" rows="6" placeholder="What's on your mind?" required></textarea>
+              </div>
+
+              <!-- Formspree extras -->
+              <input type="hidden" name="_subject" value="New enquiry from the Silvernode Solutions website">
+              <input type="text" name="_gotcha" class="sn-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+              <div class="col-12">
+                <button type="submit" class="btn sn-btn-primary sn-btn-lg sn-submit" id="snSubmit">
+                  <span class="sn-submit-label">Send Message <i class="fa-solid fa-arrow-right ms-2"></i></span>
+                </button>
+              </div>
+              <div class="col-12">
+                <div id="snFormStatus" class="sn-form-status" role="status" aria-live="polite"></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Side info -->
+      <div class="col-lg-5">
+        <div class="sn-side-stack">
+
+          <a href="consultation.html" class="sn-side-card sn-side-card-accent">
+            <div class="sn-side-icon"><i class="fa-regular fa-calendar-check"></i></div>
+            <div>
+              <h3>Prefer a conversation?</h3>
+              <p>Book a free consultation and we'll walk through your setup together.</p>
+              <span class="sn-textlink">Book a consultation <i class="fa-solid fa-arrow-right ms-2"></i></span>
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/silvernodesolutions/" target="_blank" rel="noopener" class="sn-side-card">
+            <div class="sn-side-icon"><i class="fa-brands fa-instagram"></i></div>
+            <div>
+              <h3>Instagram</h3>
+              <p>Follow along and message us directly.</p>
+              <span class="sn-side-handle">@silvernodesolutions</span>
+            </div>
+          </a>
+
+          <a href="https://www.facebook.com/groups/1242456967218018/user/61590577081690/" target="_blank" rel="noopener" class="sn-side-card">
+            <div class="sn-side-icon"><i class="fa-brands fa-facebook-f"></i></div>
+            <div>
+              <h3>Facebook</h3>
+              <p>Join the conversation on our Facebook page.</p>
+              <span class="sn-side-handle">Silvernode Solutions</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="sn-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <a class="sn-brand sn-footer-brand" href="index.html">
+          <img src="assets/logo.jpg" alt="Silvernode Solutions" class="sn-brand-mark">
+          <span class="sn-brand-text">
+            <span class="sn-brand-silver">SILVER<span class="sn-brand-grey">NODE</span></span>
+            <span class="sn-brand-sub">SOLUTIONS</span>
+          </span>
+        </a>
+        <p class="sn-footer-tag">Smart Solutions. Seamless Processes. Stronger Tomorrow.</p>
+        <div class="sn-social">
+          <a href="https://www.facebook.com/groups/1242456967218018/user/61590577081690/" target="_blank" rel="noopener" aria-label="Silvernode Solutions on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/silvernodesolutions/" target="_blank" rel="noopener" aria-label="Silvernode Solutions on Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4 class="sn-footer-head">Company</h4>
+        <ul class="sn-footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h4 class="sn-footer-head">Solutions</h4>
+        <ul class="sn-footer-links">
+          <li><a href="solutions.html#tab-ai">AI Solutions</a></li>
+          <li><a href="solutions.html#tab-digital">Digital Solutions</a></li>
+          <li><a href="solutions.html#tab-whatsapp">WhatsApp Solutions</a></li>
+          <li><a href="solutions.html#tab-automation">Business Automation</a></li>
+          <li><a href="solutions.html#tab-cloud">Cloud Solutions</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h4 class="sn-footer-head">Get in touch</h4>
+        <ul class="sn-footer-links">
+          <li><a href="consultation.html">Book a Consultation</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sn-footer-bottom">
+      <span>&copy; <span id="snYear"></span> Silvernode Solutions. All rights reserved.</span>
+      <span class="sn-footer-motto">INNOVATE <i class="sn-dot"></i> INTEGRATE <i class="sn-dot"></i> ELEVATE</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/contact.js"></script>
+
+<!-- Formspree Formbutton (floating "How can we help?" widget) -->
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  /* paste this line in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/
+  formbutton("create", {
+    action: "https://formspree.io/f/myezapbr",
+    title: "How can we help?",
+    fields: [
+      {
+        type: "email",
+        label: "Email:",
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" }
+    ],
+    styles: {
+      title: {
+        backgroundColor: "#2f6fed"
+      },
+      button: {
+        backgroundColor: "#2f6fed"
+      }
+    }
+  });
+</script>
+</body>
+</html>
