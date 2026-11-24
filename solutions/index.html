@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Solutions - Silvernode Solutions</title>
+<meta name="description" content="AI, digital, WhatsApp, business automation, and cloud solutions from Silvernode Solutions - built to streamline how your business runs." />
+
+<!-- Bootstrap 5 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<nav class="sn-nav navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand sn-brand" href="index.html">
+      <img src="assets/logo.jpg" alt="Silvernode Solutions" class="sn-brand-mark">
+      <span class="sn-brand-text">
+        <span class="sn-brand-silver">SILVER<span class="sn-brand-grey">NODE</span></span>
+        <span class="sn-brand-sub">SOLUTIONS</span>
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#snNavbar" aria-label="Toggle navigation">
+      <span class="sn-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="snNavbar">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="solutions.html">Solutions</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-3">
+          <a class="btn sn-btn-primary" href="consultation.html">Book a Consultation</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= PAGE HERO ================= -->
+<header class="sn-hero sn-hero-inner solutionsPage">
+  <canvas id="snNodeCanvas" class="sn-node-canvas" aria-hidden="true"></canvas>
+  <div class="sn-hero-fade"></div>
+
+  <div class="container position-relative">
+    <div class="row">
+      <div class="col-lg-8">
+        <p class="sn-eyebrow"><span class="sn-eyebrow-dot"></span>OUR SOLUTIONS</p>
+        <h1 class="sn-h1 sn-h1-inner">
+          <span class="sn-h1-line1">Five ways we</span>
+          <span class="sn-h1-line2">streamline your business</span>
+        </h1>
+        <p class="sn-lede">From AI agents that answer your phones to the cloud infrastructure running quietly underneath - pick a category below to see exactly what we build.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= SOLUTIONS TABS ================= -->
+<section class="sn-section sn-solutions-tabs">
+  <div class="container">
+
+    <!-- Tab nav -->
+    <ul class="nav sn-tab-nav" id="solutionsTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="sn-tab-btn active" id="tab-ai-btn" data-bs-toggle="tab" data-bs-target="#tab-ai" type="button" role="tab" aria-controls="tab-ai" aria-selected="true">
+          <i class="fa-solid fa-robot"></i> AI Solutions
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="sn-tab-btn" id="tab-digital-btn" data-bs-toggle="tab" data-bs-target="#tab-digital" type="button" role="tab" aria-controls="tab-digital" aria-selected="false">
+          <i class="fa-solid fa-globe"></i> Digital Solutions
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="sn-tab-btn" id="tab-whatsapp-btn" data-bs-toggle="tab" data-bs-target="#tab-whatsapp" type="button" role="tab" aria-controls="tab-whatsapp" aria-selected="false">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp Solutions
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="sn-tab-btn" id="tab-automation-btn" data-bs-toggle="tab" data-bs-target="#tab-automation" type="button" role="tab" aria-controls="tab-automation" aria-selected="false">
+          <i class="fa-solid fa-gears"></i> Business Automation
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="sn-tab-btn" id="tab-cloud-btn" data-bs-toggle="tab" data-bs-target="#tab-cloud" type="button" role="tab" aria-controls="tab-cloud" aria-selected="false">
+          <i class="fa-solid fa-cloud"></i> Cloud Solutions
+        </button>
+      </li>
+    </ul>
+
+    <!-- Tab panels -->
+    <div class="tab-content sn-tab-content" id="solutionsTabContent">
+
+      <!-- AI SOLUTIONS -->
+      <div class="tab-pane fade show active" id="tab-ai" role="tabpanel" aria-labelledby="tab-ai-btn">
+        <div class="sn-panel-head">
+          <div class="sn-panel-icon"><i class="fa-solid fa-robot"></i></div>
+          <div>
+            <h2 class="sn-h2">AI Solutions</h2>
+            <p class="sn-body-lg mb-0">Focus: Intelligent systems that think, answer, and assist.</p>
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>AI Customer Support</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>AI Receptionists</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>AI Sales Assistants</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>AI Knowledge Bases</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>AI Document Processing</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>AI Email Assistants</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>AI Business Assistants</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>AI Workflow Agents</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Custom AI Solutions</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Multi-language AI Assistants</div></div>
+        </div>
+      </div>
+
+      <!-- DIGITAL SOLUTIONS -->
+      <div class="tab-pane fade" id="tab-digital" role="tabpanel" aria-labelledby="tab-digital-btn">
+        <div class="sn-panel-head">
+          <div class="sn-panel-icon"><i class="fa-solid fa-globe"></i></div>
+          <div>
+            <h2 class="sn-h2">Digital Solutions</h2>
+            <p class="sn-body-lg mb-0">Focus: Transforming websites into interactive business tools.</p>
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>AI Website Chatbots</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Live Chat Integration</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Appointment Booking</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Lead Capture Forms</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Customer Support Portals</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Knowledge Centers &amp; FAQs</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Client Portals</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Website Automation</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>CRM Integration</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Website Performance Analytics</div></div>
+        </div>
+      </div>
+
+      <!-- WHATSAPP SOLUTIONS -->
+      <div class="tab-pane fade" id="tab-whatsapp" role="tabpanel" aria-labelledby="tab-whatsapp-btn">
+        <div class="sn-panel-head">
+          <div class="sn-panel-icon"><i class="fa-brands fa-whatsapp"></i></div>
+          <div>
+            <h2 class="sn-h2">WhatsApp Solutions</h2>
+            <p class="sn-body-lg mb-0">Focus: Automating conversations on the world's most-used business messaging platform.</p>
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>WhatsApp AI Chatbots</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Customer Support Automation</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Appointment Booking</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Order Tracking</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Lead Qualification</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Product Catalog Assistance</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>CRM Integration</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Broadcast &amp; Notification Workflows</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Customer Follow-up Automation</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Multi-language WhatsApp Support</div></div>
+        </div>
+      </div>
+
+      <!-- BUSINESS AUTOMATION -->
+      <div class="tab-pane fade" id="tab-automation" role="tabpanel" aria-labelledby="tab-automation-btn">
+        <div class="sn-panel-head">
+          <div class="sn-panel-icon"><i class="fa-solid fa-gears"></i></div>
+          <div>
+            <h2 class="sn-h2">Business Automation</h2>
+            <p class="sn-body-lg mb-0">Focus: Eliminating repetitive work behind the scenes.</p>
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Workflow Automation</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Lead Generation Systems</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Email Automation</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Document Automation</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Invoice &amp; Quote Automation</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Approval Workflows</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Employee Onboarding</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Internal Process Automation</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Dashboard Automation</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>API Integrations</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Custom Automation Workflows</div></div>
+        </div>
+      </div>
+
+      <!-- CLOUD SOLUTIONS -->
+      <div class="tab-pane fade" id="tab-cloud" role="tabpanel" aria-labelledby="tab-cloud-btn">
+        <div class="sn-panel-head">
+          <div class="sn-panel-icon"><i class="fa-solid fa-cloud"></i></div>
+          <div>
+            <h2 class="sn-h2">Cloud Solutions</h2>
+            <p class="sn-body-lg mb-0">Focus: Infrastructure that's fast, secure, and built to scale.</p>
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Cloud Hosting</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Cloud Deployment</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Cloud Databases</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Cloud Migration (for SMBs)</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Secure Backups</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Cloud Monitoring</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Server Configuration</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>API Hosting</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Application Deployment</div></div>
+          <div class="col-sm-6 col-lg-4"><div class="sn-item"><i class="fa-solid fa-check"></i>Infrastructure Management</div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA BAND ================= -->
+<section class="sn-cta-band">
+  <div class="container">
+    <div class="sn-cta-inner">
+      <div>
+        <h2 class="sn-h2 mb-2">Not sure which solution fits?</h2>
+        <p class="sn-body-lg mb-0">Book a free consultation and we'll map the right mix of AI, digital, WhatsApp, automation, and cloud for your business.</p>
+      </div>
+      <a href="consultation.html" class="btn sn-btn-primary sn-btn-lg flex-shrink-0">Book a Free Consultation</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="sn-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <a class="sn-brand sn-footer-brand" href="index.html">
+          <img src="assets/logo.jpg" alt="Silvernode Solutions" class="sn-brand-mark">
+          <span class="sn-brand-text">
+            <span class="sn-brand-silver">SILVER<span class="sn-brand-grey">NODE</span></span>
+            <span class="sn-brand-sub">SOLUTIONS</span>
+          </span>
+        </a>
+        <p class="sn-footer-tag">Smart Solutions. Seamless Processes. Stronger Tomorrow.</p>
+        <div class="sn-social">
+          <a href="https://www.facebook.com/groups/1242456967218018/user/61590577081690/" target="_blank" rel="noopener" aria-label="Silvernode Solutions on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/silvernodesolutions/" target="_blank" rel="noopener" aria-label="Silvernode Solutions on Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4 class="sn-footer-head">Company</h4>
+        <ul class="sn-footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h4 class="sn-footer-head">Solutions</h4>
+        <ul class="sn-footer-links">
+          <li><a href="solutions.html#tab-ai">AI Solutions</a></li>
+          <li><a href="solutions.html#tab-digital">Digital Solutions</a></li>
+          <li><a href="solutions.html#tab-whatsapp">WhatsApp Solutions</a></li>
+          <li><a href="solutions.html#tab-automation">Business Automation</a></li>
+          <li><a href="solutions.html#tab-cloud">Cloud Solutions</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h4 class="sn-footer-head">Get in touch</h4>
+        <ul class="sn-footer-links">
+          <li><a href="consultation.html">Book a Consultation</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sn-footer-bottom">
+      <span>&copy; <span id="snYear"></span> Silvernode Solutions. All rights reserved.</span>
+      <span class="sn-footer-motto">INNOVATE <i class="sn-dot"></i> INTEGRATE <i class="sn-dot"></i> ELEVATE</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
