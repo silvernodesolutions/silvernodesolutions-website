@@ -537,6 +537,12 @@ a{ text-decoration: none; color: inherit; }
 
 @media (max-width: 575.98px){
   .sn-h1{ font-size: 2.5rem; }
+   .sn-h1-line2{
+    background: linear-gradient(120deg, var(--silver-1) 0%, var(--silver-2) 65%, var(--silver-3) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   .sn-cta-inner{ text-align: left; }
   .sn-cta-inner .btn{ width: 100%; }
   .sn-footer-bottom{ flex-direction: column; align-items: flex-start; }
