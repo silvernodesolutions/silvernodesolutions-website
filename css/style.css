@@ -858,7 +858,7 @@ textarea.sn-input{ resize: vertical; min-height: 140px; }
   transition: border-color .18s ease, color .18s ease;
 }
 .sn-chip:hover{ border-color: var(--blue-dim); color: var(--silver-1); }
-.sn-chip-more{ border-style: dashed; color: var(--ink-dim); }
+.sn-chip-more{ border-style: solid; color: var(--silver-4); }
 
 /* Founder */
 .sn-founder{
