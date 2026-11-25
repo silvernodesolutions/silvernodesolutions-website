@@ -891,7 +891,7 @@ textarea.sn-input{ resize: vertical; min-height: 140px; }
   object-fit: cover;
   object-position: center 25%;
   display: block;
-  transform: translate(14px, 13px) scale(1.16);
+  transform: translate(0px, 0px) scale(0.0);
 }
 
 .sn-founder-name{
