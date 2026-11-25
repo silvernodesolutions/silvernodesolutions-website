@@ -289,5 +289,28 @@
   
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 <script src="/js/script.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const hash = window.location.hash;
+
+  if (hash) {
+    const tabButton = document.querySelector(
+      '[data-bs-target="' + hash + '"]'
+    );
+
+    if (tabButton) {
+      const tab = new bootstrap.Tab(tabButton);
+      tab.show();
+
+      setTimeout(function () {
+        document.querySelector('.sn-solutions-tabs')
+          ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 200);
+    }
+  }
+});
+</script>
+
 </body>
 </html>
